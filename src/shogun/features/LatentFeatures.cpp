@@ -79,7 +79,7 @@ void CLatentFeatures::init()
 	SG_ADD((CSGObject**) &m_samples, "samples", "Array of examples");
 }
 
-CLatentFeatures* CLatentFeatures::obtain_from_generic(CFeatures* base_feats)
+CLatentFeatures* .as<CLatentFeatures>(CFeatures* base_feats)
 {
 	ASSERT(base_feats != NULL)
 	if (base_feats->get_feature_class() == C_LATENT)
