@@ -38,7 +38,7 @@ void CMKLClassification::init_training()
 	REQUIRE(m_labels->get_num_labels(), "Number of labels is zero.\n");
 }
 
-CMKLClassification* CMKLClassification::obtain_from_generic(CMachine* machine)
+CMKLClassification* .as<CKMLClassification>(CMachine* machine)
 {
 	if (machine == NULL)
 		return NULL;
