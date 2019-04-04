@@ -85,7 +85,7 @@ float64_t CChi2Kernel::get_width()
 	return width;
 }
 
-CChi2Kernel* CChi2Kernel::obtain_from_generic(CKernel* kernel)
+CChi2Kernel* .as<CChi2Kernel>(CKernel* kernel)
 {
 	if (kernel->get_kernel_type()!=K_CHI2)
 	{
